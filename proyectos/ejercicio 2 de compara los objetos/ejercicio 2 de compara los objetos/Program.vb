@@ -2,7 +2,7 @@ Imports System
 
 Module Program
     Sub Main(args As String())
-        ' Definimos una lista de notas
+        ' Definamos una lista de notas
         Dim notas As New List(Of Integer) From {7, 8, 9, 6, 10, 5, 8, 7}
 
         ' Usamos LINQ para filtrar las notas sobresalientes
