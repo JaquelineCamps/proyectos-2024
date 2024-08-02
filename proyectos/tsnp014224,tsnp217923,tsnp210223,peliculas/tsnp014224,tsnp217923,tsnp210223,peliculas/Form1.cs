@@ -70,13 +70,15 @@ namespace tsnp014224_tsnp217923_tsnp210223_peliculas
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            if( btnAgregar.Text=="Agregar")
+            if( btnAgregar.Text== "Agregar")
             {
                 btnAgregar.Text = "Guardar";
                 btnModificar.Text = "Cancelar";
                 estadoctrls(false);
-                peliculasBindingSource.AddNew();// agrega un nuevo registro.
-            }else //guardar 
+                peliculasBindingSource.AddNew();
+               
+            }
+            else //guardar 
             {
                 peliculasBindingSource.EndEdit();
                 peliculasTableAdapter.Update(this._db_tsnp014224_tsnp217923_tsnp210223_peliculasDataSet);
@@ -88,11 +90,11 @@ namespace tsnp014224_tsnp217923_tsnp210223_peliculas
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            if (btnModificar.Text == "Modificar")
-            {
+            if (btnModificar.Text == "Modificar") {
                 btnAgregar.Text = "Guardar";
                 btnModificar.Text = "Cancelar";
                 estadoctrls(false);
+                
             }
             else //cancelar
                 peliculasBindingSource.CancelEdit();
@@ -100,6 +102,7 @@ namespace tsnp014224_tsnp217923_tsnp210223_peliculas
                 estadoctrls(true);
                 btnAgregar.Text = "Agregar";
                 btnModificar.Text = "Modificar";
+                
             }
         }
 

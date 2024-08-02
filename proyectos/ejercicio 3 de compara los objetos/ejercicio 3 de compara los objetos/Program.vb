@@ -31,7 +31,7 @@ Module Program
 
         Console.WriteLine("Cantidad de ventas por  cliente:")
         For Each resultado In ventasPorCliente
-            Console.WriteLine($"{resultado.Cliente}: {resultado.Totalventas} unidades")
+            Console.WriteLine($"{resultado.cliente}: {resultado.Totalventas} unidades")
         Next
 
         ' Obtener la cantidad total por producto

@@ -82,7 +82,7 @@
             // 
             idpeliculaLabel.AutoSize = true;
             idpeliculaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            idpeliculaLabel.Location = new System.Drawing.Point(60, 44);
+            idpeliculaLabel.Location = new System.Drawing.Point(22, 37);
             idpeliculaLabel.Name = "idpeliculaLabel";
             idpeliculaLabel.Size = new System.Drawing.Size(26, 16);
             idpeliculaLabel.TabIndex = 1;
@@ -92,6 +92,7 @@
             // 
             tituloLabel.AutoSize = true;
             tituloLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            tituloLabel.ForeColor = System.Drawing.Color.Maroon;
             tituloLabel.Location = new System.Drawing.Point(21, 109);
             tituloLabel.Name = "tituloLabel";
             tituloLabel.Size = new System.Drawing.Size(80, 20);
@@ -102,6 +103,7 @@
             // 
             autorLabel.AutoSize = true;
             autorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            autorLabel.ForeColor = System.Drawing.Color.Maroon;
             autorLabel.Location = new System.Drawing.Point(21, 153);
             autorLabel.Name = "autorLabel";
             autorLabel.Size = new System.Drawing.Size(78, 20);
@@ -112,6 +114,7 @@
             // 
             sinopsisLabel.AutoSize = true;
             sinopsisLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            sinopsisLabel.ForeColor = System.Drawing.Color.Maroon;
             sinopsisLabel.Location = new System.Drawing.Point(21, 206);
             sinopsisLabel.Name = "sinopsisLabel";
             sinopsisLabel.Size = new System.Drawing.Size(100, 20);
@@ -122,6 +125,7 @@
             // 
             duracionLabel.AutoSize = true;
             duracionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            duracionLabel.ForeColor = System.Drawing.Color.Maroon;
             duracionLabel.Location = new System.Drawing.Point(21, 261);
             duracionLabel.Name = "duracionLabel";
             duracionLabel.Size = new System.Drawing.Size(112, 20);
@@ -132,7 +136,8 @@
             // 
             clasificacionLabel.AutoSize = true;
             clasificacionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            clasificacionLabel.Location = new System.Drawing.Point(21, 318);
+            clasificacionLabel.ForeColor = System.Drawing.Color.Maroon;
+            clasificacionLabel.Location = new System.Drawing.Point(21, 316);
             clasificacionLabel.Name = "clasificacionLabel";
             clasificacionLabel.Size = new System.Drawing.Size(154, 20);
             clasificacionLabel.TabIndex = 11;
@@ -171,7 +176,8 @@
             // tituloTextBox
             // 
             this.tituloTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.peliculasBindingSource, "titulo", true));
-            this.tituloTextBox.Location = new System.Drawing.Point(177, 109);
+            this.tituloTextBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.tituloTextBox.Location = new System.Drawing.Point(181, 107);
             this.tituloTextBox.Name = "tituloTextBox";
             this.tituloTextBox.Size = new System.Drawing.Size(399, 22);
             this.tituloTextBox.TabIndex = 4;
@@ -179,7 +185,8 @@
             // autorTextBox
             // 
             this.autorTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.peliculasBindingSource, "autor", true));
-            this.autorTextBox.Location = new System.Drawing.Point(177, 151);
+            this.autorTextBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.autorTextBox.Location = new System.Drawing.Point(181, 151);
             this.autorTextBox.Name = "autorTextBox";
             this.autorTextBox.Size = new System.Drawing.Size(368, 22);
             this.autorTextBox.TabIndex = 6;
@@ -187,7 +194,8 @@
             // sinopsisTextBox
             // 
             this.sinopsisTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.peliculasBindingSource, "sinopsis", true));
-            this.sinopsisTextBox.Location = new System.Drawing.Point(177, 204);
+            this.sinopsisTextBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.sinopsisTextBox.Location = new System.Drawing.Point(181, 204);
             this.sinopsisTextBox.Name = "sinopsisTextBox";
             this.sinopsisTextBox.Size = new System.Drawing.Size(547, 22);
             this.sinopsisTextBox.TabIndex = 8;
@@ -195,7 +203,8 @@
             // duracionTextBox
             // 
             this.duracionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.peliculasBindingSource, "duracion", true));
-            this.duracionTextBox.Location = new System.Drawing.Point(177, 259);
+            this.duracionTextBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.duracionTextBox.Location = new System.Drawing.Point(181, 259);
             this.duracionTextBox.Name = "duracionTextBox";
             this.duracionTextBox.Size = new System.Drawing.Size(199, 22);
             this.duracionTextBox.TabIndex = 10;
@@ -203,7 +212,8 @@
             // clasificacionTextBox
             // 
             this.clasificacionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.peliculasBindingSource, "clasificacion", true));
-            this.clasificacionTextBox.Location = new System.Drawing.Point(177, 318);
+            this.clasificacionTextBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.clasificacionTextBox.Location = new System.Drawing.Point(181, 316);
             this.clasificacionTextBox.Name = "clasificacionTextBox";
             this.clasificacionTextBox.Size = new System.Drawing.Size(529, 22);
             this.clasificacionTextBox.TabIndex = 12;
@@ -226,16 +236,18 @@
             // 
             this.lblRegistros.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.peliculasBindingSource, "Idpelicula", true));
             this.lblRegistros.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRegistros.Location = new System.Drawing.Point(136, 30);
+            this.lblRegistros.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.lblRegistros.Location = new System.Drawing.Point(131, 23);
             this.lblRegistros.Name = "lblRegistros";
-            this.lblRegistros.Size = new System.Drawing.Size(99, 23);
+            this.lblRegistros.Size = new System.Drawing.Size(93, 36);
             this.lblRegistros.TabIndex = 14;
             this.lblRegistros.Text = "x de n";
             // 
             // btnUltimo
             // 
             this.btnUltimo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUltimo.Location = new System.Drawing.Point(279, 20);
+            this.btnUltimo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnUltimo.Location = new System.Drawing.Point(301, 14);
             this.btnUltimo.Name = "btnUltimo";
             this.btnUltimo.Size = new System.Drawing.Size(50, 39);
             this.btnUltimo.TabIndex = 3;
@@ -246,9 +258,10 @@
             // btnSiguiente
             // 
             this.btnSiguiente.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSiguiente.Location = new System.Drawing.Point(226, 19);
+            this.btnSiguiente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnSiguiente.Location = new System.Drawing.Point(244, 14);
             this.btnSiguiente.Name = "btnSiguiente";
-            this.btnSiguiente.Size = new System.Drawing.Size(50, 39);
+            this.btnSiguiente.Size = new System.Drawing.Size(51, 39);
             this.btnSiguiente.TabIndex = 2;
             this.btnSiguiente.Text = ">";
             this.btnSiguiente.UseVisualStyleBackColor = true;
@@ -257,7 +270,8 @@
             // btnAnterior
             // 
             this.btnAnterior.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAnterior.Location = new System.Drawing.Point(80, 22);
+            this.btnAnterior.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnAnterior.Location = new System.Drawing.Point(65, 23);
             this.btnAnterior.Name = "btnAnterior";
             this.btnAnterior.Size = new System.Drawing.Size(50, 39);
             this.btnAnterior.TabIndex = 1;
@@ -268,7 +282,8 @@
             // btnPrimero
             // 
             this.btnPrimero.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrimero.Location = new System.Drawing.Point(27, 21);
+            this.btnPrimero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnPrimero.Location = new System.Drawing.Point(12, 22);
             this.btnPrimero.Name = "btnPrimero";
             this.btnPrimero.Size = new System.Drawing.Size(50, 39);
             this.btnPrimero.TabIndex = 0;
@@ -291,6 +306,7 @@
             // btnModificar
             // 
             this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btnModificar.Location = new System.Drawing.Point(124, 13);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(138, 48);
@@ -302,6 +318,7 @@
             // btnEliminar
             // 
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.btnEliminar.Location = new System.Drawing.Point(268, 11);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(117, 48);
@@ -313,7 +330,8 @@
             // btnAgregar
             // 
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(1, 14);
+            this.btnAgregar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnAgregar.Location = new System.Drawing.Point(1, 13);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(117, 48);
             this.btnAgregar.TabIndex = 0;
@@ -336,6 +354,7 @@
             this.grbDatos.Controls.Add(sinopsisLabel);
             this.grbDatos.Controls.Add(this.autorTextBox);
             this.grbDatos.Enabled = false;
+            this.grbDatos.ForeColor = System.Drawing.Color.Black;
             this.grbDatos.Location = new System.Drawing.Point(11, 28);
             this.grbDatos.Name = "grbDatos";
             this.grbDatos.Size = new System.Drawing.Size(746, 360);
