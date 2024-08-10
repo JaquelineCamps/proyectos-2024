@@ -1,0 +1,54 @@
+﻿@model tsnp204023_tsnp210223_tsnp229123bloque3.Models.Peliculas
+
+@{
+    ViewData["Title"] = "Detalles";
+}
+
+<h1>Detalles</h1>
+
+<div>
+    <h4>Peliculas</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Codigo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Codigo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Titulo)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Titulo)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Autor)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Autor)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Sinopsis)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Sinopsis)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Duracion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Duracion)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Clasificacion)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Clasificacion)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.IdPelicula">detalles</a> |
+    <a asp-action="Index">ATRAS</a>
+</div>
