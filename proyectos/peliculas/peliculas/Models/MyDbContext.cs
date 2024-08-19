@@ -6,11 +6,14 @@ namespace peliculas.Models
     {
         public DbSet<Pelicula> Peliculas { get; set; }
         public DbSet<Producto> Productos { get; set; }
+        
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Pelicula>().HasKey(c => c.IdPelicula);
             modelBuilder.Entity<Producto>().HasKey(c => c.IdProducto);
+            
         }
     }
     }
